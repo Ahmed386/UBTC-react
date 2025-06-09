@@ -1,7 +1,16 @@
 import React from "react";
-import { Carousel } from "3d-react-carousal";
+// import { Carousel } from "3d-react-carousal";
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
+import Carousel from 'react-bootstrap/Carousel';
+
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Swiper's default styles
+import "swiper/css/navigation"; // Optional: if you need navigation buttons
+import "swiper/css/pagination";
+import MyCarousel from './../mycarousel/Mycarousel';
 
 export default function Projectdetails() {
   const { id } = useParams();
@@ -24,13 +33,10 @@ export default function Projectdetails() {
           <div className="container bord px-5 py-4 ">
             <div className="bg-white p-5">
               <div className="slider center py-3  ">
-                <Carousel
-                  slides={selectedProject.images.map((img, index) => (
-                    <img src={img} key={index} />
-                  ))}
-                  // autoplay={false}
-                  interval={1000}
-                />
+                
+
+                <MyCarousel selectedProject={selectedProject} />
+
               </div>
 
               <div className="row  py-5">
@@ -45,9 +51,7 @@ export default function Projectdetails() {
                       {selectedProject.descriptiontitle}
                     </p>
                     <h1 className="secondline">Project Information</h1>
-                    <p className="devpreef">
-                      {selectedProject.description}
-                    </p>
+                    <p className="devpreef">{selectedProject.description}</p>
                   </div>
                 </div>
               </div>
