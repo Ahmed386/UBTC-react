@@ -389,10 +389,10 @@ nav .navbtn {
 .owl-dot:focus span {
   background-color: var(--prim-color) !important;
 }
-.swiper-slide div {
+/* .swiper-slide div {
   height: 0% !important;
   padding-bottom: 15px !important;
-}
+} */
 
 .fifthsection .heading h6 {
   color: var(--prim-color);
