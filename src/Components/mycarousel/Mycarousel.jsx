@@ -6,7 +6,7 @@ import "swiper/css/pagination"; // Optional: if you need pagination dots
 const MyCarousel = ({ selectedProject }) => {
   return (
     <Swiper
-      spaceBetween={50} // Space between slides
+      spaceBetween={70} // Space between slides
       slidesPerView={3} // Only one slide visible at a time (you can change this)
       loop={true} // Loop slides
       autoplay={{
