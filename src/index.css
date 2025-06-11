@@ -535,6 +535,10 @@ iframe {
   .react-3d-carousel .slider-container .slider-right div {
     top: 73% !important;
   }
+
+   .headingtitle{
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 540px) and (max-width: 920px) {
